@@ -1,0 +1,28 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+.btn {
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 500;
+  @include transition;
+
+  &--primary {
+    background: $primary;
+    color: #fff;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+  }
+
+  &--outline {
+    border: 1px solid $light;
+    color: $light;
+
+    &:hover {
+      background: $light;
+      color: $dark;
+    }
+  }
+}

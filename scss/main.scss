@@ -1,0 +1,11 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./reset" as reset;
+@use "./layout" as layout;
+@use "./components" as components;
+
+body {
+  font-family: $font;
+  background: $dark;
+  color: $light;
+}
